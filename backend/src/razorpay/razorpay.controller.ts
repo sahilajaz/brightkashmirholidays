@@ -7,28 +7,29 @@ import {
   HttpCode,
   HttpStatus,
   InternalServerErrorException,
-  Get, Res
+   Res,
 } from "@nestjs/common";
 import { RazorpayService } from './razorpay.service';
 import { Response } from 'express';
 import { EmailRequest } from "./types/razorpay.types";
 
-@Controller('razorpay')
+
+  @Controller('razorpay')
 export class RazorpayController {
   constructor(private readonly razorPayService: RazorpayService) {}
 
-  // Endpoint to create an order in Razorpay
+
   @Post('create-order')
   @HttpCode(HttpStatus.CREATED)
   async createOrder(@Body() body: { amount: number; currency: string }): Promise<{ success: boolean; order: any }> {
     const { amount, currency } = body;
 
-    // Validate the amount and currency
+
     if (!amount || amount < 1) throw new BadRequestException('Invalid amount');
     if (!currency) throw new BadRequestException('Currency is required');
 
     try {
-      // Create order in Razorpay
+
       const order = await this.razorPayService.createOrder(amount, currency);
       return { success: true, order };
     } catch (error) {
@@ -81,5 +82,6 @@ export class RazorpayController {
       })
     }
   }
+
 
 }

@@ -32,6 +32,9 @@ const Footer = () => {
           </li>
         </ul>
       </div>
+      <div className='footetr-text'>
+        <p>&copy;Bright Kashmir Holidays Registered with Department of Tourism J&K under the Registration No : JKEA00004293</p>
+      </div>
     </div>
 
   )

@@ -25,7 +25,7 @@ function Contact() {
                 </div>
                 <div className="info-item">
                     <h2>Working Hours</h2>
-                    <p>Monday - Saturday: 9 AM - 7 PM</p>
+                    <p>Monday - Saturday: 8 AM - 10 PM</p>
                     <p>Sunday: Closed</p>
                 </div>
             </div>

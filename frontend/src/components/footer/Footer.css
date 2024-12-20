@@ -74,6 +74,11 @@ ul li strong {
     color: #ffffff;
 }
 
+.footetr-text {
+    color: whitesmoke;
+    z-index: 5;
+}
+
 @media screen and (max-width: 768px) {
     .list-div {
         padding: 10px;
@@ -100,6 +105,11 @@ ul li strong {
         height: 250px;
         object-position: top center;
     }
+
+    
+    .footetr-text {
+        font-size: 0.5rem;
+     }
 }
 
 @media screen and (max-width: 480px) {
@@ -125,5 +135,9 @@ ul li strong {
         font-size: 0.7rem;
         text-align: justify;
         padding: 0 2px 0 5px;
+    }
+
+    .footetr-text {
+       font-size: 0.3rem;
     }
 }

@@ -1,0 +1,80 @@
+/* Photo Grid Styling */
+.photo-grid {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 12px;  /* Larger rounded corners */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);  /* More prominent shadow */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Image Container Styling */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 12px;  /* Larger rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);  /* Stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;  /* Ensure no overflowing content */
+    box-sizing: border-box;
+}
+
+.image-container:hover {
+    transform: scale(1.05);  /* Slightly enlarge the image container */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);  /* More prominent shadow on hover */
+}
+
+/* Buttons Styling */
+.image-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;  /* Fully rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.buy-btn {
+    background: linear-gradient(135deg, #007bff, #00c6ff);  /* Gradient blue background */
+    color: white;
+    font-weight: bold;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004080);  /* Darker gradient on hover */
+    transform: scale(1.1);  /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Enhance shadow on hover */
+}
+
+.buy > .buy-li {
+    color: whitesmoke; !important;
+}
+
+.query-btn {
+    background: linear-gradient(135deg, #28a745, #34d058);  /* Gradient green background */
+    color: white;
+    font-weight: bold;
+}
+
+.query-btn:hover {
+    background: linear-gradient(135deg, #1e7e34, #1e6f30);  /* Darker gradient on hover */
+    transform: scale(1.1);  /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Enhance shadow on hover */
+}
+
+.query > .query-li {
+    color: whitesmoke; !important;
+}

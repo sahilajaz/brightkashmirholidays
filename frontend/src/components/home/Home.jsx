@@ -1,13 +1,17 @@
-import React from 'react';
 import MyCarousel from '../carousel/MyCarousel';
 import './Home.css';
-import { Link } from 'react-router-dom';
+import PhotoGrid from "../photoGrid/Grid.jsx";
+
 
 const Home = () => {
 
   return (
     <div className="home">
       <MyCarousel />
+        <section className='titles'>
+            <h1>Our Services</h1>
+            <PhotoGrid/>
+        </section>
     </div>
   );
 };

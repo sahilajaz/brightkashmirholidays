@@ -7,14 +7,15 @@ import {
   HttpCode,
   HttpStatus,
   InternalServerErrorException,
-   Res,
+  Res
 } from "@nestjs/common";
 import { RazorpayService } from './razorpay.service';
-import { Response } from 'express';
+import e, { Response } from 'express';
 import { EmailRequest } from "./types/razorpay.types";
 
 
-  @Controller('razorpay')
+
+@Controller('razorpay')
 export class RazorpayController {
   constructor(private readonly razorPayService: RazorpayService) {}
 
@@ -82,6 +83,4 @@ export class RazorpayController {
       })
     }
   }
-
-
 }

@@ -1,37 +1,47 @@
-import { Body, Controller,  Post, UploadedFile, UseInterceptors } from "@nestjs/common";
-import { ProductService } from "./product.service";
+import { BadRequestException, Body, Controller, Get, NotFoundException, Param, Post, Query, Res, UploadedFile, UseInterceptors } from "@nestjs/common";
 import { FileInterceptor } from "@nestjs/platform-express";
-import { ProductDto } from "./dto/ProductDto";
 import { diskStorage } from "multer";
+import { ProductService } from "./product.service";
+import { ProductDto } from "./dto/product.dto";
 
 
 @Controller('product')
 export class ProductController {
-  constructor(private readonly productService: ProductService) {}
-
-  @Post('upload')
+  constructor(private readonly productService : ProductService){} 
+    
+  @Post('upload-photo')
   @UseInterceptors(
     FileInterceptor('file', {
       storage: diskStorage({
-        destination: './uploads/photos',
-        filename: (req , file, cb)=> {
-          cb(null , `${file.originalname}`)
-      }
+        destination: './uploads',         filename: (req, file, cb) => {
+          const uniqueName = `${Date.now()}-${file.originalname}`; 
+          cb(null, uniqueName);
+        },
       }),
     }),
   )
-  async uploadProduct(
-    @Body() productDto: ProductDto,
-    @UploadedFile() file: Express.Multer.File,
-  ) {
-    console.log(productDto);
-    const savedProduct = await this.productService.saveProductWithPhoto(
-      productDto,
-      file,
-    );
+  async uploadPhoto(@UploadedFile() file: Express.Multer.File) {
+    if (!file) {
+      throw new BadRequestException('No file uploaded');
+    }
+    return  {
+      filePath: `/uploads/${file.filename}`,
+    } 
+  }
+
+  @Post('create-product')
+  async createProduct(@Body() productDto: ProductDto) {
+    if (!productDto) {
+      throw new BadRequestException('Details are required');
+    }
+
+    const savedProduct = await this.productService.saveProductWithPhoto(productDto);
     return {
-      message: 'Product saved successfully.',
+      message: 'Product saved successfully',
       product: savedProduct,
     };
   }
-}
+   
+  
+
+  } 

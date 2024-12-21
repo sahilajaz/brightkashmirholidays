@@ -6,9 +6,6 @@ import { RazorpayModule } from './razorpay/razorpay.module';
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { MailerModule , MailerOptions} from '@nestjs-modules/mailer';
 import { ProductModule } from './product/product.module';
-import { ServeStaticModule } from "@nestjs/serve-static";
-import {join} from 'path'
-
 
 @Module({
   imports: [
@@ -16,7 +13,6 @@ import {join} from 'path'
       isGlobal:true,
       envFilePath: '.env'
     }),
-    ProductModule,
     RazorpayModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
@@ -43,10 +39,7 @@ import {join} from 'path'
         }
       })
     }),
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'uploads'),
-      serveRoot: '/uploads',
-    }),
+    ProductModule,
   ],
   controllers: [RazorpayController],
   providers: [RazorpayService],

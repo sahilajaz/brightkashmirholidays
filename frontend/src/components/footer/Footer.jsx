@@ -33,7 +33,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className='footetr-text'>
-        <p>&copy;Bright Kashmir Holidays Registered with Department of Tourism J&K under the Registration No : JKEA00004293</p>
+        <p>&copy;Bright Kashmir Holidays <br/> Registered with Department of Tourism J&K under the Registration No : JKEA00004293</p>
       </div>
     </div>
 

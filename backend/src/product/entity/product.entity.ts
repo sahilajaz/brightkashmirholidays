@@ -5,7 +5,7 @@ export class Product {
   @PrimaryGeneratedColumn('increment')
   id: number;
   @Column()
-  title: string;
+  name: string;
   @Column('text')
   description: string;
   @Column()

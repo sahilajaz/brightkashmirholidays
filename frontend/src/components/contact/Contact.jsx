@@ -12,7 +12,7 @@ function Contact() {
             <div className="contact-info">
                 <div className="info-item">
                     <h2>Phone</h2>
-                    <p>6006151196</p>
+                    <p>+91 6006151196</p>
                 </div>
                 <div className="info-item">
                     <h2>Email</h2>
@@ -25,8 +25,7 @@ function Contact() {
                 </div>
                 <div className="info-item">
                     <h2>Working Hours</h2>
-                    <p>Monday - Saturday: 8 AM - 10 PM</p>
-                    <p>Sunday: Closed</p>
+                    <p>Working all week</p>
                 </div>
             </div>
             <div className="contact-form">

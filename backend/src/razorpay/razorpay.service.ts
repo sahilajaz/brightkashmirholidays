@@ -3,9 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import * as crypto from 'crypto';
 import { MailerService } from '@nestjs-modules/mailer';
 import { EmailRequest } from "./types/razorpay.types";
-import { ProductDto } from "../product/dto/ProductDto";
 import { InjectRepository } from "@nestjs/typeorm";
-import { Product } from "../product/entity/product.entity";
 import { Repository } from "typeorm";
 const Razorpay = require('razorpay');
 
@@ -17,8 +15,6 @@ export class RazorpayService {
   constructor(
     private config: ConfigService,
     private readonly mailService: MailerService,
-    @InjectRepository(Product)
-    private productRepository: Repository<Product>
   ) {
     this.razorPay = new Razorpay({
       key_id: config.get('RAZORPAY_ID'),
@@ -60,11 +56,4 @@ export class RazorpayService {
     });
   }
 
-  async saveProductWithPhoto(productDto: ProductDto, file: Express.Multer.File) {
-    const newProduct = this.productRepository.create({
-      ...productDto,
-      photoUrl: file.path,
-    });
-    return await this.productRepository.save(newProduct);
-  }
 }

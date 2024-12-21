@@ -1,0 +1,57 @@
+.Privacyandpolicy {
+    padding: 16px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+.Privacyandpolicy h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 7px;
+    text-align: left;
+}
+
+.Privacyandpolicy h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 16px;
+    text-align: left;
+}
+
+.Privacyandpolicy .title {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.Privacyandpolicy .description {
+    line-height: 35px;
+    text-align: justify;
+}
+
+.Privacyandpolicy .info-heading {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.Privacyandpolicy .info {
+    text-align: left;
+}
+
+.Privacyandpolicy ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.Privacyandpolicy .sharing {
+    text-align: left;
+}
+
+.Privacyandpolicy .Datasecurity {
+    text-align: left;
+}

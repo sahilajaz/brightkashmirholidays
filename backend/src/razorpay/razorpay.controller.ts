@@ -66,7 +66,7 @@ export class RazorpayController {
   }
 
   @Post('mail')
-  async senMail(@Body() emailRequest : EmailRequest ,@Res() response : Response)      {
+  async senMail(@Body() emailRequest : EmailRequest ,@Res() response : Response){
 
     try {
       const mail = await this.razorPayService.sendMail(emailRequest)

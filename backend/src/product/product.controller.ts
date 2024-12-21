@@ -42,6 +42,19 @@ export class ProductController {
     };
   }
    
-  
+    @Get('get/all')
+    async getAllData() {
+      try{
+        const data = await this.productService.getAllData()
+         return {
+          message : "success",
+          services: data
+         }
+      }
+      catch(error) {
+        console.error(error)
+        throw new Error('Something went wrong')
+      }
+    }
 
   } 

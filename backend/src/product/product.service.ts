@@ -14,4 +14,9 @@ export class ProductService {
         });
         return await this.productRepository.save(newProduct);
       }
+
+
+      async getAllData() {
+        return await this.productRepository.find()
+      }
 }

@@ -9,7 +9,7 @@ const Home = () => {
     <div className="home">
       <MyCarousel />
         <section className='titles'>
-            <h1>Our Services</h1>
+            <h1>Discover Dream Destinations</h1>
             <PhotoGrid/>
         </section>
     </div>

@@ -1,7 +1,56 @@
-import React from 'react';
+import {useState} from 'react';
 import './Contact.css';
+import {toast, ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function Contact() {
+    const[loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    })
+
+    const handleChange = async (e) => {
+        e.preventDefault();
+
+        // Check for required fields
+        if (!formData.name || !formData.email || !formData.message) {
+            toast.error('Please fill out all fields');
+            return;
+        }
+
+        setLoading(true);
+
+        try {
+            const response = await fetch(`http://localhost:3000/razorpay/customer-query`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+            setLoading(false);
+
+            if (result.success) {
+                toast.success('Message sent');
+                setFormData({ name: "", email: "", message: "" }); // Reset form
+            } else {
+                toast.error(result.message || 'Something went wrong');
+            }
+        } catch (error) {
+            setLoading(false);
+            toast.error('Failed to sent message');
+            console.error('Error:', error);
+        }
+    };
+
+
+
     return (
         <div className="contact">
             <h1>Contact Us</h1>
@@ -25,18 +74,29 @@ function Contact() {
                 </div>
                 <div className="info-item">
                     <h2>Working Hours</h2>
-                    <p>Working all week</p>
+                    <p>8Am - 10PM</p>
+                    <p>All week</p>
                 </div>
             </div>
             <div className="contact-form">
                 <h2>Send Us a Message</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" required />
-                    <input type="email" placeholder="Your Email" required />
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit">Submit</button>
+                <form onSubmit={handleChange}>
+                    <input type="text" placeholder="Your Name" required
+                           onChange={(e) => setFormData((prevData) => ({...prevData , name: e.target.value}))} />
+                    <input type="email" placeholder="Your Email" required
+                    onChange={(e) => setFormData((prevData) => ({...prevData , email: e.target.value })) }
+                    />
+                    <textarea placeholder="Your Message" rows="5" required
+                    onChange={(e) => setFormData((prevData) => ({...prevData , message: e.target.value }))}
+                    />
+                    <button type="submit">
+                        {
+                            loading ? 'Sending...' : 'Submit'
+                        }
+                    </button>
                 </form>
             </div>
+            <ToastContainer/>
         </div>
     );
 }

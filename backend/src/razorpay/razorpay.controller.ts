@@ -11,7 +11,7 @@ import {
 } from "@nestjs/common";
 import { RazorpayService } from './razorpay.service';
 import e, { Response } from 'express';
-import { EmailRequest } from "./types/razorpay.types";
+import { DataForm, EmailRequest } from "./types/razorpay.types";
 
 
 
@@ -82,5 +82,18 @@ export class RazorpayController {
         message: 'failed to send mail',
       })
     }
+  }
+
+  @Post('customer-query')
+  async sendMailFromCustomer(@Body() dataForm  : DataForm , @Res() response : Response) {
+       try {
+          const msg = await this.razorPayService.mailFromCusomer(dataForm)
+          return response.status(200).json({
+            success: true,
+            msg
+          })
+       } catch (error) {
+         console.error(error)
+       }
   }
 }

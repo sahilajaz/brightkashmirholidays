@@ -9,3 +9,9 @@ export  interface EmailRequest {
   packagePrice: string;
   verificationRes: boolean
 }
+
+export interface DataForm {
+   name: string;
+   email: string;
+   message: string;
+}

@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import * as crypto from 'crypto';
 import { MailerService } from '@nestjs-modules/mailer';
-import { EmailRequest } from "./types/razorpay.types";
+import { DataForm, EmailRequest } from "./types/razorpay.types";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
 const Razorpay = require('razorpay');
@@ -54,6 +54,15 @@ export class RazorpayService {
       subject: 'Payment status',
       text: message,
     });
+  }
+
+  async mailFromCusomer(dataForm : DataForm) {
+      return await this.mailService.sendMail({
+        from: 'hello@demomailtrap.com',
+        to: 'sahilajazw@gmail.com',
+        subject: `mail from ${dataForm.name}`,
+        text: `Message from: ${dataForm.name}\nEmail: ${dataForm.email}\n\nMessage:\n${dataForm.message}`
+      })
   }
 
 }

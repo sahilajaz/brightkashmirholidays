@@ -13,6 +13,8 @@ function Contact() {
         message: "",
     })
 
+    const baseUrl = 'http://localhost:3000';
+
     const handleChange = async (e) => {
         e.preventDefault();
 
@@ -25,7 +27,7 @@ function Contact() {
         setLoading(true);
 
         try {
-            const response = await fetch(`http://localhost:3000/razorpay/customer-query`, {
+            const response = await fetch(`${baseUrl}/razorpay/customer-query`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

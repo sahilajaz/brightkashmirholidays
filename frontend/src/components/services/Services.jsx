@@ -15,10 +15,10 @@ function Services() {
     numOfPerson: '',
   });
 
-  console.log(userDetails);
+  const baseUrl = `http://localhost:3000`
 
   const fetchPackages = async () => {
-    const data = await fetch('http://localhost:3000/product/get/all');
+    const data = await fetch(`${baseUrl}/product/get/all`);
     const packages = await data.json();
     setTravelPackages(packages.services);
   };
@@ -46,7 +46,7 @@ function Services() {
     setLoading((prev) => ({ ...prev, [pkg.id]: true }));
 
     try {
-      const response = await fetch('http://localhost:3000/razorpay/create-order', {
+      const response = await fetch(`${baseUrl}/razorpay/create-order`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ amount: pkg.price * userDetails.numOfPerson * 100, currency: 'INR' }),
@@ -82,7 +82,7 @@ function Services() {
               return;
             }
 
-            const verifyResponse = await fetch('http://localhost:3000/razorpay/verify-payment', {
+            const verifyResponse = await fetch(`${baseUrl}/razorpay/verify-payment`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ function Services() {
             if (verificationResult.success) {
               toast.success('Payment Successful!');
               closeForm();
-              await fetch('http://localhost:3000/razorpay/mail', {
+              await fetch(`${baseUrl}/razorpay/mail`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ function Services() {
             } else {
               toast.error('Payment verification failed.');
               closeForm();
-              await fetch('http://localhost:3000/razorpay/mail', {
+              await fetch(`${baseUrl}/razorpay/mail`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',

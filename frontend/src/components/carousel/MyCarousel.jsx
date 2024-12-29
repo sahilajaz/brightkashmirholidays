@@ -7,47 +7,47 @@ import "./MyCarousel.css";
 const MyCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const imagesArr = [
-    { id: 1, path: "packege-1.png" },
-    { id: 2, path: "packege-2.jpg" },
-    { id: 3, path: "packege-3.jpg" },
+    // { id: 1, path: "packege-1.png" },
+    { id: 1, path: "packege-2.jpg" },
+    { id: 2, path: "packege-3.jpg" },
     {
-      id: 4,
+      id: 3,
       path: "pic1.jpg"
     },
     {
-      id: 5,
+      id: 3,
       path: "pic2.jpg"
     },
     {
-      id: 6,
+      id: 5,
       path: "pic3.jpg"
     },
     {
-      id: 7,
+      id: 6,
       path: "pic4.jpg"
     },
     {
-      id: 8,
+      id: 7,
       path: "pic5.jpg"
     },
     {
-      id: 9,
+      id: 8,
       path: "pic6.jpg"
     },
     {
-      id: 10,
+      id: 9,
       path: "pic7.jpg"
     },
     {
-      id: 11,
+      id: 10,
       path: "pic8.jpg"
     },
     {
-      id: 12,
+      id: 11,
       path: "pic9.jpg"
     },
     {
-      id: 13,
+      id: 12,
       path: "pic10.jpg"
     },
   ];

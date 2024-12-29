@@ -79,6 +79,7 @@ ul li strong {
     z-index: 5;
 }
 
+
 @media screen and (max-width: 768px) {
     .list-div {
         padding: 10px;

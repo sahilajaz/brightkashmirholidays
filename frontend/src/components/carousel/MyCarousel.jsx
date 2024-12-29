@@ -84,7 +84,7 @@ const MyCarousel = () => {
             <div className="carousel-overlay"></div>
             <div className="carousel-text">
               <h1>Bright Kashmir Holidays</h1>
-              <p>Travel for life</p>
+              <p> Travel to Paradise</p>
             </div>
           </div>
         ))}

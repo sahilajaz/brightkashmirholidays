@@ -67,7 +67,7 @@ function Contact() {
                 </div>
                 <div className="info-item">
                     <h2>Email</h2>
-                    <p>brightkashmirholidays@gmail.com</p>
+                    <p>contact@brightkashmirholidays.in</p>
                 </div>
                 <div className="info-item">
                     <h2>Address</h2>
@@ -76,8 +76,7 @@ function Contact() {
                 </div>
                 <div className="info-item">
                     <h2>Working Hours</h2>
-                    <p>8Am - 10PM</p>
-                    <p>All week</p>
+                    <p>Sunday - Saturday: 8 AM - 10 PM </p>
                 </div>
             </div>
             <div className="contact-form">

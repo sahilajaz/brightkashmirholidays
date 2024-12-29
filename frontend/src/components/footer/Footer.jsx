@@ -1,5 +1,7 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -30,6 +32,18 @@ const Footer = () => {
               <Link to="/terms">Terms and conditions</Link>
             </li>
           </ul>
+          <ul className='social-media' style={{zIndex: 5}}>
+          <li>
+              <a href="https://www.instagram.com/bright_kashmir_holidays/?igsh=MXdtNWo4dWpobG42bw%3D%3D#" target='_blank' rel='noopener noreferrer'>
+              <FaInstagram style={{ width: '70px',height:'20px' ,color: 'white' }} />
+              </a>
+          </li>
+          <li>
+        <a href="https://www.facebook.com/share/13eELviwJ8/" target='_blank' rel='noopener noreferrer'>
+          <CiFacebook style={{ width: '70px',height:'20px', color: 'white' }} />
+        </a>
+      </li>
+      </ul>
         </div>
         <div className='footetr-text'>
           <p>&copy;Bright Kashmir Holidays <br/> Registered with Department of Tourism J&K under the Registration No : JKEA00004293</p>

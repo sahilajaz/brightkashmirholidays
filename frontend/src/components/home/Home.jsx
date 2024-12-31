@@ -1,6 +1,7 @@
 import MyCarousel from '../carousel/MyCarousel';
 import './Home.css';
-import PhotoGrid from "../photoGrid/Grid.jsx";
+import About from '../about/About.jsx';
+import Card from '../servicecard/Card.jsx'
 
 
 const Home = () => {
@@ -8,9 +9,12 @@ const Home = () => {
   return (
     <div className="home">
       <MyCarousel />
-        <section className='titles'>
-            <h1>Discover Dream Destinations</h1>
-            <PhotoGrid/>
+        <section className='service'>
+          <h1>Services</h1>
+          <Card/>
+        </section>
+        <section className='about'>
+          <About/>
         </section>
     </div>
   );

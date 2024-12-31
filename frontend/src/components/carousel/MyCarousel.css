@@ -11,44 +11,11 @@
   
   .carousel-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 700px;
+    object-position: bottom;
     display: block;
   }
   
-  .carousel-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-  }
-  
-  .carousel-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 2;
-    padding: 0 10px;
-  }
-  
-  .carousel-text h1 {
-    font-size: 2rem;
-    margin: 0;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    line-height: 1.2;
-  }
-  
-  .carousel-text p {
-    font-size: 1rem;
-    margin: 10px 0 0;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  }
   
   @media (min-width: 600px) {
     .carousel-text h1 {

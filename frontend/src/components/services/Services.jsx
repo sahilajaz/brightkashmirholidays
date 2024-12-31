@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-export const servicesArray = [
+ const servicesArray = [
   {
       id: 1,
       "name": "Doodhpathri",

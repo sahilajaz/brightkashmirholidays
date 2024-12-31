@@ -27,6 +27,7 @@ const Header = () => {
               padding: ''
             }} 
           />
+          <span style={{marginLeft:'10px'}}>Bright Kashmir Holidays</span>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
@@ -38,9 +39,6 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link as={Link} to="/services" className="custom-nav-link">
               Services
-            </Nav.Link>
-            <Nav.Link as={Link} to="/about" className="custom-nav-link">
-              About
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" className="custom-nav-link">
               Contact

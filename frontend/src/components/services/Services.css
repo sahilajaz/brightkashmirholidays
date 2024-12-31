@@ -31,7 +31,11 @@
 }
 
 .description , .title , .button-div , .price {
-    padding: 0.9rem;
+    padding: 0.8rem;
+}
+
+.description {
+    text-align: justify;
 }
 
 .pay-button {

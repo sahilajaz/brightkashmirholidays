@@ -7,48 +7,99 @@ import "./MyCarousel.css";
 const MyCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const imagesArr = [
-    // { id: 1, path: "packege-1.png" },
-    { id: 1, path: "packege-2.jpg" },
-    { id: 2, path: "packege-3.jpg" },
+    { id: 1, path: "pic1.jpg" },
+    { id: 2, path: "pic2.jpg" },
     {
       id: 3,
-      path: "pic1.jpg"
-    },
-    {
-      id: 3,
-      path: "pic2.jpg"
-    },
-    {
-      id: 5,
       path: "pic3.jpg"
     },
     {
-      id: 6,
-      path: "pic4.jpg"
-    },
-    {
-      id: 7,
+      id: 5,
       path: "pic5.jpg"
     },
     {
-      id: 8,
+      id: 6,
       path: "pic6.jpg"
     },
     {
-      id: 9,
+      id: 7,
       path: "pic7.jpg"
     },
     {
-      id: 10,
+      id: 8,
       path: "pic8.jpg"
     },
     {
-      id: 11,
+      id: 9,
       path: "pic9.jpg"
     },
     {
-      id: 12,
+      id: 10,
       path: "pic10.jpg"
+    },
+    {
+      id: 11,
+      path: "pic11.jpg"
+    },
+    {
+      id: 12,
+      path: "pic12.jpg"
+    },
+    {
+      id: 13,
+      path: "pic13.jpg"
+    },
+    {
+      id: 14,
+      path: "pic14.jpg"
+    },
+    {
+      id: 15,
+      path: "pic15.jpg"
+    },
+    {
+      id: 16,
+      path: "pic16.jpg"
+    },
+    {
+      id: 17,
+      path: "pic17.jpg"
+    },
+    {
+      id: 18,
+      path: "pic18.jpg"
+    },
+    {
+      id: 19,
+      path: "pic19.jpg"
+    },
+    {
+      id: 20,
+      path: "pic20.jpg"
+    },
+    {
+      id: 21,
+      path: "pic21.jpg"
+    },
+    {
+      id: 22,
+      path: "pic22.jpg"
+    },
+    {
+      id: 23,
+      path: "pic23.jpg"
+    },
+    {
+      id: 24,
+      path: "pic24.jpg"
+    },
+    {
+      id: 25,
+      path: "pic25.jpg"
+    },
+    {
+      id: 26,
+      path: "pic26.jpg"
     },
   ];
 
@@ -65,7 +116,7 @@ const MyCarousel = () => {
   };
 
   return (
-    <div style={{ position: "relative"}}>
+    <div style={{ position: "relative" ,width:'100%'}}>
       <Carousel
         index={currentIndex}
         autoPlay={true}
@@ -81,11 +132,6 @@ const MyCarousel = () => {
               alt={`Package ${image.id}`}
               className="carousel-image"
             />
-            <div className="carousel-overlay"></div>
-            <div className="carousel-text">
-              <h1>Bright Kashmir Holidays</h1>
-              <p> Travel to Paradise</p>
-            </div>
           </div>
         ))}
       </Carousel>

@@ -13,6 +13,7 @@ const Header = () => {
     }}>
       <Container>
         <Navbar.Brand className="ms-0">
+          <div style={{marginBottom: '-25px'}}>
           <img 
             src="logo.jpg"  
             alt="Logo" 
@@ -27,7 +28,9 @@ const Header = () => {
               padding: ''
             }} 
           />
-          <span style={{marginLeft:'10px'}}>Bright Kashmir Holidays</span>
+          <span style={{marginLeft:'10px' , fontSize: '1.7rem' , fontWeight: 'bold'}}>Bright Kashmir Holidays</span>
+          </div>
+           <p style={{marginRight: '90px' ,fontSize: '1rem'}}>Travel To Paradise</p>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
@@ -36,6 +39,9 @@ const Header = () => {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" className="custom-nav-link">
               Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about" className="custom-nav-link">
+              About
             </Nav.Link>
             <Nav.Link as={Link} to="/services" className="custom-nav-link">
               Services

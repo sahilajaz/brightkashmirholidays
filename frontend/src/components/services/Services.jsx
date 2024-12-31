@@ -83,7 +83,7 @@ function Services() {
             <img src={pkg.pic} alt={pkg.name} className="package-image" />
             <h1 className="title">{pkg.name}</h1>
             <p className="description">{pkg.info}</p>
-            <p className="price">Price: {pkg.price}</p>
+            <p className="price">Starting Price: {pkg.price}</p>
             <div className="button-div">
             <button
                 onClick={() => openWhatsApp()}

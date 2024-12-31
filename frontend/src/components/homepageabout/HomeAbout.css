@@ -1,0 +1,143 @@
+.about {
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 4px;
+    margin-top: 1px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.testimonial-card {
+    flex: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    min-height: 220px; /* Ensure enough height for the text */
+    text-align: left;
+}
+
+.testimonial-card .feedback {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+    white-space: normal; /* Allow text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.testimonial-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.testimonials::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.para-div {
+    padding: 2px 9px 1px 10px;
+    margin: 1px 10px 0 15px;
+    text-align: justify;
+}
+
+.paragraph {
+    padding: 0 10px 0px 10px;
+    font-style: italic;
+    color: #555;
+    margin: 0 237px 1px 172px;
+}
+
+@media (max-width: 999px) {
+    .para-div {
+        padding: 0;
+        margin: 0 2px 0 2px;
+        text-align: justify;
+    }
+
+    .paragraph {
+        padding: 0 2px 0 2px;
+        font-family: cursive;
+        margin: 0;
+        line-height: 26px;
+    }
+
+    .testimonials {
+        gap: 10px;
+    }
+
+    .testimonial-card {
+        width: 250px; 
+        min-height: 200px; 
+    }
+
+    .testimonial-card .feedback {
+        white-space: normal; 
+    }
+}
+
+@media (max-width: 500px) {
+    .about h1 {
+        font-size: 1.5rem !important;
+        margin-bottom: 5px;
+    }
+
+    .para-div {
+        padding: 0;
+        margin: 0 2px 0 2px;
+        text-align: justify;
+    }
+
+    .testimonials .feedback {
+        font-size: 0.8rem;
+    }
+
+    .paragraph {
+        padding: 0 2px 0 2px;
+        font-family: cursive;
+        margin: 0;
+        font-size: 1rem !important;
+    }
+
+    .testimonial-card {
+        width: 90%; 
+        min-height: auto; 
+    }
+
+    .testimonials {
+        padding: 5px 0;
+    }
+}

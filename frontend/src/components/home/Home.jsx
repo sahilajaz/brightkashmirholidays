@@ -1,7 +1,7 @@
 import MyCarousel from '../carousel/MyCarousel';
 import './Home.css';
-import About from '../about/About.jsx';
 import Card from '../servicecard/Card.jsx'
+import HomeAbout from '../homepageabout/HomeAbout.jsx';
 
 
 const Home = () => {
@@ -10,11 +10,11 @@ const Home = () => {
     <div className="home">
       <MyCarousel />
         <section className='service'>
-          <h1>Services</h1>
+          <h1>Top Destinations</h1>
           <Card/>
         </section>
         <section className='about'>
-          <About/>
+         <HomeAbout/>
         </section>
     </div>
   );

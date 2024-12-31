@@ -101,6 +101,26 @@ const MyCarousel = () => {
       id: 26,
       path: "pic26.jpg"
     },
+    {
+      id: 27,
+      path: "pic27.jpg"
+    },
+    {
+      id: 28,
+      path: "pic28.jpg"
+    },
+    {
+      id: 29,
+      path: "pic29.jpg"
+    },
+    {
+      id: 30,
+      path: "pic30.jpg"
+    },
+    {
+      id: 31,
+      path: "pic31.jpg"
+    },
   ];
 
   const handlePrev = () => {

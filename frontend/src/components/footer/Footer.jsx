@@ -2,7 +2,7 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
 
 
 const Footer = () => {
@@ -57,7 +57,7 @@ const Footer = () => {
           background: 'transparent',  
           border: 'none',             
           padding: 0,                 
-        }} onClick={openWhatsApp}><FaWhatsapp style={{ width: '70px',height:'28px', color: 'white' }} /></button>
+        }} > <a href='https://www.linkedin.com/in/sameer-nazir-5a7882216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank'><CiLinkedin style={{ width: '70px',height:'28px', color: 'white' }}/></a> </button>
         </li>
       </ul>
         </div>

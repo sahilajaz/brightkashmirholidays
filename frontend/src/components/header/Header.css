@@ -27,3 +27,44 @@
       border-bottom: 2px solid #d1e8ff;
     }
   }
+
+  /* Ensure the dropdown takes up the full width */
+  .navbar-nav .dropdown-menu {
+    width: 80vw; /* Full width of the viewport */
+    min-width: 800px; /* Set a minimum width for the dropdown */
+    position: static; /* This ensures the dropdown takes up space in the document flow */
+    padding: 20px;
+  }
+  
+  .dropdown-menu-full-width {
+    display: flex;
+    justify-content: space-between;
+    text-align: center; /* Ensures the text in the dropdown is centered */
+    align-items: center;
+  }
+  
+  .dropdown-menu-full-width .col-4 {
+    padding: 10px;
+  }
+  
+  .dropdown-menu-full-width h6 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Center-align dropdown items */
+  .dropdown-menu-full-width .dropdown-item {
+    text-align: center; /* Centers the dropdown items */
+  }
+  
+  /* Remove hover effect on the dropdown title */
+  #navbar-dropdown .nav-link {
+    pointer-events: none; /* Disables hover interaction */
+    color: inherit; /* Keeps the current text color */
+    cursor: default; /* Sets a default cursor */
+  }
+  
+
+
+  

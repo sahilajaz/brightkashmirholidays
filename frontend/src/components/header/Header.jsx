@@ -29,6 +29,7 @@ const Header = () => {
             <span style={{marginLeft:'10px' , fontSize: '1.7rem' , fontWeight: 'bold'}}>Bright Kashmir Holidays</span>
           </div>
           <p style={{marginRight: '90px' ,fontSize: '1rem'}}>Travel To Paradise</p>
+          <p style={{fontSize: '0.8rem' , marginBottom: '-10px'}}>24X7 Travel Support Service +91 99060011</p>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
@@ -44,7 +45,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/services" className="custom-nav-link">
               Services
             </Nav.Link>
-            <NavDropdown title="Places to See" id="navbar-dropdown" className="custom-nav-link" align="end">
+            <NavDropdown title="Places to see" id="navbar-dropdown" className="custom-nav-link" align="end" style={{color: 'white'}}>
   <div className="dropdown-menu-full-width">
     <div className="row">
       <div className="col-3">
@@ -91,6 +92,44 @@ const Header = () => {
     </div>
   </div>
 </NavDropdown>
+<NavDropdown title="Things to do" id="navbar-dropdown" className="custom-nav-link" align="end">
+  <div className="dropdown-menu-full-width">
+    <div className="row">
+      <div className="col-3">
+        <h6>Adventure</h6>
+        <NavDropdown.Item>Heli skiing</NavDropdown.Item>
+        <NavDropdown.Item>High altitude Golfing</NavDropdown.Item>
+        <NavDropdown.Item>River Rafting</NavDropdown.Item>
+        <NavDropdown.Item>Rock Climbing</NavDropdown.Item>
+        <NavDropdown.Item>Skiing</NavDropdown.Item>
+        <NavDropdown.Item>Trekking</NavDropdown.Item>
+        <NavDropdown.Item>Water Skiing</NavDropdown.Item>
+        <NavDropdown.Item>More Adventures</NavDropdown.Item>
+      </div>
+      <div className="col-3">
+        <h6>Pilgrimage</h6>
+        <NavDropdown.Item>Amarnath</NavDropdown.Item>
+        <NavDropdown.Item>Gompas</NavDropdown.Item>
+        <NavDropdown.Item>Hazratbal</NavDropdown.Item>
+        <NavDropdown.Item>Khir Bhawani</NavDropdown.Item>
+        <NavDropdown.Item>Sufi Shrines</NavDropdown.Item>
+        <NavDropdown.Item>Vaishno Devi</NavDropdown.Item>
+        <NavDropdown.Item>Yatra Registration</NavDropdown.Item>
+        <NavDropdown.Item>Yatra Route</NavDropdown.Item>
+      </div>
+      <div className="col-3">
+        <h6>Sightseeing</h6>
+        <NavDropdown.Item>Beautiful Landscape</NavDropdown.Item>
+        <NavDropdown.Item>Chadar Trek</NavDropdown.Item>
+        <NavDropdown.Item>Gondola Cable Car</NavDropdown.Item>
+        <NavDropdown.Item>Reach Amarnath</NavDropdown.Item>
+        <NavDropdown.Item>Shikara Boat Ride</NavDropdown.Item>
+        <NavDropdown.Item>Unique Hospitality</NavDropdown.Item>
+      </div>
+    </div>
+  </div>
+</NavDropdown>
+
 
           </Nav>
         </Navbar.Collapse>

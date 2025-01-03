@@ -28,43 +28,48 @@
     }
   }
 
-  /* Ensure the dropdown takes up the full width */
   .navbar-nav .dropdown-menu {
     width: 80vw; /* Full width of the viewport */
     min-width: 800px; /* Set a minimum width for the dropdown */
     position: static; /* This ensures the dropdown takes up space in the document flow */
     padding: 20px;
-  }
-  
-  .dropdown-menu-full-width {
+}
+
+.dropdown-menu-full-width {
     display: flex;
     justify-content: space-between;
     text-align: center; /* Ensures the text in the dropdown is centered */
     align-items: center;
-  }
-  
-  .dropdown-menu-full-width .col-4 {
+    gap: 60px; /* Increased gap for more spacing */
+    margin: 10px 0; /* Adds some vertical spacing */
+}
+
+.dropdown-menu-full-width .col-4 {
     padding: 10px;
-  }
-  
-  .dropdown-menu-full-width h6 {
+}
+
+.dropdown-menu-full-width h6 {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  /* Center-align dropdown items */
-  .dropdown-menu-full-width .dropdown-item {
+}
+
+.dropdown-menu-full-width .dropdown-item {
     text-align: center; /* Centers the dropdown items */
-  }
-  
-  /* Remove hover effect on the dropdown title */
-  #navbar-dropdown .nav-link {
+    margin: 5px 0; /* Adds some vertical spacing between items */
+
+    /* Text clamping */
+    display: -webkit-box; /* Necessary for WebKit browsers */
+    -webkit-line-clamp: 1; /* Number of lines to show */
+    -webkit-box-orient: vertical; /* Box orientation */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Adds ellipsis (...) if text overflows */
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+#navbar-dropdown .nav-link {
     pointer-events: none; /* Disables hover interaction */
     color: inherit; /* Keeps the current text color */
     cursor: default; /* Sets a default cursor */
-  }
-  
+}
 
-
-  

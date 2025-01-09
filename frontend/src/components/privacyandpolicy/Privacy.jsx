@@ -49,7 +49,10 @@ const Privacy = () => {
                 precautions, no
                 method of electronic transmission or storage is completely secure.
             </p>
-
+            <h2>5. Use of Images and Content</h2>
+        <p className="sharing">
+            All images, videos, text, and other content provided on this website are the exclusive property of Bright Kashmir Holidays. These materials are protected by copyright and cannot be copied, reproduced, distributed, or used in any other way without the express written consent of the company. Any unauthorized use of these materials is prohibited and may result in legal action. © 2025 Bright Kashmir Holidays. All rights reserved.
+        </p>
         </section>
     );
 };

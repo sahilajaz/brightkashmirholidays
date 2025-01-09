@@ -29,7 +29,7 @@ const Header = () => {
             <span style={{marginLeft:'10px' , fontSize: '1.7rem' , fontWeight: 'bold'}}>Bright Kashmir Holidays</span>
           </div>
           <p style={{marginRight: '90px' ,fontSize: '1rem'}}>Travel To Paradise</p>
-          <p style={{fontSize: '0.8rem' , marginBottom: '-10px'}}>24X7 Travel Support Service +91 99060011</p>
+          <p style={{fontSize: '0.8rem' , marginBottom: '-10px'}}>24X7 Travel Support Service +91 6006151196</p>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
@@ -44,6 +44,9 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link as={Link} to="/services" className="custom-nav-link">
               Services
+            </Nav.Link>
+            <Nav.Link as={Link} to="/contact" className="custom-nav-link">
+              Contact
             </Nav.Link>
             <NavDropdown title="Places to see" id="navbar-dropdown" className="custom-nav-link" align="end" style={{color: 'white'}}>
   <div className="dropdown-menu-full-width">

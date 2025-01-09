@@ -60,7 +60,33 @@ import 'react-toastify/dist/ReactToastify.css';
       "info": "Amarnath, one of the holiest shrines in Hinduism, is located in a cave in Jammu and Kashmir and is dedicated to Lord Shiva. The site is known for its natural ice Shivlinga that forms during certain months of the year.",
       "price": "11999 per person",
       "details": "The Amarnath Yatra is a spiritual journey that attracts thousands of pilgrims annually. The trek to the shrine is both challenging and rewarding, offering breathtaking views of the surrounding mountains. The journey is marked by devotion and camaraderie, creating a deeply moving experience. With proper planning and guidance, the Amarnath Yatra is a once-in-a-lifetime spiritual pilgrimage."
+  },
+  {
+    "id": 8,
+    "name": "Yousmarg",
+    "pic": "Yousmarg.jpg",
+    "info": "Yousmarg, a scenic hill station located in the Budgam district of Jammu and Kashmir, is known for its lush meadows, dense forests, and breathtaking views of the surrounding mountains. It is a peaceful retreat for nature lovers and adventure enthusiasts alike.",
+    "price": "7999 per person",
+    "details": "Yousmarg offers a tranquil environment, ideal for picnics, trekking, and camping. The region's pristine beauty, with its vast meadows and serene surroundings, makes it an excellent destination for relaxation and exploration. Visitors can also enjoy horseback riding, nature walks, and visits to nearby attractions like the Doodhpathri and Nilnag Lake. The peaceful atmosphere and the scenic beauty of Yousmarg make it a must-visit destination in Jammu and Kashmir."
+  },
+  {
+    "id": 8,
+    "name": "High Lakes Trek",
+    "pic": "high.jpg",
+    "info": "The High Altitude Lakes Trek is a challenging adventure through the rugged terrains of Jammu and Kashmir. It offers breathtaking views of pristine lakes nestled in the high mountains, making it an exhilarating experience for trekkers and nature enthusiasts.",
+    "price": "7999 per person",
+    "details": "The trek takes you through challenging landscapes, alpine meadows, and dense forests, leading to some of the highest and most beautiful lakes in the region. Along the way, trekkers will experience the serene atmosphere of these remote lakes, which are surrounded by towering peaks. The trek is ideal for adventure lovers looking for a unique challenge, with opportunities for camping, wildlife sighting, and photography. Key highlights include visits to lakes like Gangbal Lake and Vishansar Lake, both famous for their crystal-clear waters and scenic beauty. This trek offers an unforgettable adventure for those seeking to explore the beauty of the high-altitude regions."
+  },
+  {
+    "id": 9,
+    "name": "Gurez Valley",
+    "pic": "gurez.jpg",
+    "info": "Fort Gurez Valley is a hidden gem located in the remote Gurez Valley of Jammu and Kashmir. Known for its stunning beauty, historical fort, and pristine landscapes, it is an ideal destination for history enthusiasts, nature lovers, and adventure seekers.",
+    "price": "11999 per person",
+    "details": "Gurez Valley, surrounded by snow-capped peaks and dense forests, offers a serene and peaceful environment. The region is home to the ancient Fort Gurez, which holds great historical significance. Visitors can explore the fort, trek along the lush green meadows, and enjoy panoramic views of the valley. The valley is also known for its vibrant local culture, with traditional Gurez inhabitants offering insights into their unique way of life. Activities include visiting the Gurez Fort, trekking, camping, and experiencing the untouched beauty of the valley. It’s a perfect retreat for those looking to explore both history and nature."
   }
+  
+
 ];
 
 

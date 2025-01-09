@@ -38,7 +38,7 @@ const Footer = () => {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="/terms">Terms and conditions</Link>
+              <Link to="/terms">Terms and Conditions</Link>
             </li>
           </ul>
           <ul className='social-media' style={{zIndex: 5}}>

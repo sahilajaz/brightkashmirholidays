@@ -57,7 +57,7 @@ const Footer = () => {
           background: 'transparent',  
           border: 'none',             
           padding: 0,                 
-        }} > <a href='https://www.linkedin.com/in/bright-kashmir-holidays-749517344/' target='_blank'><CiLinkedin style={{ width: '70px',height:'28px', color: 'white' }}/></a> </button>
+        }} > <a href="https://www.linkedin.com/in/bright-kashmir-holidays-749517344/" target='_blank'><CiLinkedin style={{ width: '70px',height:'28px', color: 'white' }}/></a> </button>
         </li>
       </ul>
         </div>
